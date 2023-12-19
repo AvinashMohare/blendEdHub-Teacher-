@@ -1,0 +1,84 @@
+.sidebar {
+    width: 340px;
+    height: 100vh;
+    color: #2b59ce;
+
+    border-radius: 20px;
+
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: #fff;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    .sidebar__header {
+        padding: 20px;
+        font-size: 1.5em;
+        border-bottom: 1px solid #555;
+        height: 15%;
+    }
+
+    .sidebar__menu {
+        height: 80%;
+
+        ul {
+            list-style-type: none;
+            padding-top: 20px;
+            margin: 0;
+            height: 100%;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+
+            // background-color: green;
+            .optionContainer {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                li {
+                    padding: 14px 0;
+                    cursor: pointer;
+
+                    width: 80%;
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    a {
+                        // padding: 14px 0;
+                        cursor: pointer;
+
+                        width: 100%;
+
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        text-decoration: none;
+                        color: #2b59ce;
+                        .icon {
+                            width: 30%;
+                            // background-color: red;
+                        }
+
+                        .option {
+                            width: 70%;
+                            // text-align: center;
+                            // margin-left: 40px;
+                            // background-color: green;
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+                &:hover {
+                    background: linear-gradient(
+                        203.14deg,
+                        #cad1e5 14.97%,
+                        rgba(182, 188, 202, 0) 129.11%
+                    );
+                }
+            }
+        }
+    }
+}
