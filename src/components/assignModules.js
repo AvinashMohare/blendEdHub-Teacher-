@@ -7,7 +7,7 @@ import "../styles/AssignModules.scss";
 const AssignModules = () => {
     const [title, setTitle] = useState("");
     const [video, setVideo] = useState(null);
-    const [selectedSubject, setSelectedSubject] = useState("English");
+    const [selectedSubject, setSelectedSubject] = useState("Physics");
     const [loading, setLoading] = useState(false);
 
     const handleFileChange = (e) => {
@@ -60,7 +60,7 @@ const AssignModules = () => {
                             // Reset input fields after submission
                             setTitle("");
                             setVideo(null);
-                            setSelectedSubject("English");
+                            setSelectedSubject("Physics");
                             setLoading(false);
                         }
                     );
@@ -84,9 +84,9 @@ const AssignModules = () => {
                             onChange={handleSubjectChange}
                             className="selectSubject"
                         >
-                            <option value="English">English</option>
+                            <option value="Physics">Physics</option>
                             <option value="Maths">Maths</option>
-                            <option value="Science">Science</option>
+                            <option value="English">English</option>
                         </select>
                     </label>
                     <br />
