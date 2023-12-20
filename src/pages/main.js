@@ -5,6 +5,8 @@ import { Routes } from "react-router-dom";
 import Dashboard from "./dashboard";
 import AssignModules from "../components/assignModules";
 import Students from "./students";
+import Recommend from "../components/recommend";
+import { db } from "../firebase";
 
 const Main = () => {
     return (
@@ -22,12 +24,10 @@ const Main = () => {
                             element={<AssignModules />}
                         />
                         <Route path="/students" element={<Students />} />
-                        {/* <Route
-                            path="/groupDiscussion"
-                            element={<GroupDiscussions />}
+                        <Route
+                            path="/recommend"
+                            element={<Recommend db={db} />}
                         />
-                        <Route path="/doubts" element={<Doubts />} />
-                        <Route path="/playground" element={<Playground />} /> */}
                     </Routes>
                 </div>
             </div>
